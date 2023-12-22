@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Donate to inforlearnmw</title>
+</head>
+<body class="font-sans bg-gray-100">
+
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto">
+            <img src="LOGO.png" alt="inforlearnmw Logo" class="h-12">
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8">
+
+        <!-- Donation Form Section -->
+        <section id="donation" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Donate to inforlearnmw</h2>
+
+            <!-- Donation Form -->
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" enctype="multipart/form-data" class="bg-white p-6 rounded-md shadow-md">
+                <!-- Name -->
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-semibold text-gray-600">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-semibold text-gray-600">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md">
+                </div>
+
+                <!-- Donation Amount -->
+                <div class="mb-4">
+                    <label for="amount" class="block text-sm font-semibold text-gray-600">Donation Amount ($)</label>
+                    <input type="number" id="amount" name="amount" class="w-full px-4 py-2 border rounded-md">
+                </div>
+
+                <!-- Message -->
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-semibold text-gray-600">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-md"></textarea>
+                </div>
+
+                <!-- Proof of Bank Deposit (File Upload) -->
+                <div class="mb-4">
+                    <label for="proof" class="block text-sm font-semibold text-gray-600">Proof of Bank Deposit</label>
+                    <input type="file" id="proof" name="proof" class="w-full">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full inline-block hover:bg-blue-600">Donate</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            &copy; 2023 inforlearnmw Non-Profit. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
